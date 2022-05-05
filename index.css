@@ -1,0 +1,111 @@
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(5deg, rgb(131, 7, 232), rgb(78, 4, 142)) ;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    color: #fff;
+    text-align: center;
+    padding: 20px; 
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 25px 0;
+}
+
+.container{
+    display: flex;    
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input{
+    width: 320px;
+    height: 280px;
+    border-radius: 10px;
+    background-color: rgba(234, 231, 231, 0.111);
+    resize: none;
+    outline: none;
+    font-size: 14px;
+    padding: 5px;    
+    border: 1px solid rgba(255, 255, 255, 0.324);
+    color: #fff;
+}
+.input:focus{ border: 1px solid rgba(47, 24, 88, 0.644);}
+
+.input::placeholder{    
+    font-family: sans-serif;
+    color: rgb(189, 186, 186);
+}
+
+.submit{
+    margin: 20px;
+    width: 200px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.524);
+    border-radius: 10px;
+    color: #fff;
+    background: linear-gradient(20deg, rgb(170, 3, 211), rgb(9, 103, 158));
+    cursor: pointer;
+}
+.submit:hover{ background: rgb(9, 103, 158);}
+
+.right{
+    display: flex;
+    flex-direction: column;
+}
+.posts{ width: 350px;}
+
+.container-text{
+    border: 1px solid rgba(255, 255, 255, 0.324);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;    
+}
+
+.text{
+    font-size: 14px;
+    text-align: initial;    
+}
+
+.icons{
+    display: flex;
+    padding: 10px 0;
+}
+
+i{
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 100;
+    padding: 0 5px;
+}
+
+i:nth-child(1){
+    color: rgb(12, 255, 202);
+}
+
+i:nth-child(2){
+    color: rgb(255, 52, 160);
+}
+.posts div{
+    display: flex;
+    flex-direction: column;    
+}
